@@ -1,0 +1,40 @@
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+Usernme:<input type="text" name="username">
+Password:<input type="password" name = "pass">
+
+<button type="submit" onclick="UserAction()">Search</button>
+<script>
+
+
+//var apiurl ='https://sampletestfunctionapp.azurewebsites.net/api/HttpTriggerJS1?code=t67E1MRJT/ifUBsf8NhZKZb3MNg7EvIgEUG1EL/Yx2Z2BP//VpNkxw==';
+  //  var a = new XMLHttpRequest();
+	
+	function UserAction() {
+		console.log(document.getElementsByName("username")[0].value);
+		console.log(document.getElementsByName("pass")[0].value);		
+		 var Lead = {
+            "username": document.getElementsByName("username")[0].value,
+			"pass":document.getElementsByName("pass")[0].value
+        };
+		$.ajax({
+    url: 'https://sampletestfunctionapp.azurewebsites.net/api/HttpTriggerJS1?code=T7j2QcxychgNrHfoWSTJP6EQXECd3IlAaJai1DimdxAkEZqoilFR/g==',
+    type: 'POST',
+    contentType: 'application/json',
+    crossOrigin: true,
+    data: JSON.stringify(Lead ), 
+    success: function(){
+       alert('hello');
+    },
+    error: function(){
+        alert('error');
+    }
+});
+		
+		
+   
+        
+    }
+    
+</script>
+</html>
