@@ -32,7 +32,7 @@
         "P3",
         "P4"
       ],
-      "defaultValue": "S2",
+      "defaultValue": "S1",
       "metadata": {
         "description": "The pricing tier for the hosting plan."
       }
