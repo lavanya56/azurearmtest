@@ -10,7 +10,7 @@
       }
     },
     "hostingPlanName_Armwebgit456": {
-	"defaultValue": "Armwebgit456",
+	"Value": "Armwebgit456",
       "type": "string",
       "metadata": {
         "description": "The name of the App Service plan to use for hosting the web app."
